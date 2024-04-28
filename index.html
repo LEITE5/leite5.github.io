@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <title>Vanessa Marques MakeUp Artist</title>
+</head>
+
+<body>
+    <header id="myHeader">
+        <div class="header-content">
+            <!-- <h1>Vanessa Marques</h1> -->
+            <div id="logoImg">
+                <img src="img/logoUpdated.png" alt="Makeup Artist" loading="lazy">
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav id="myNav">
+                <ul>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#portfolio">Portefólio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="marcacao.html">Marcações</a></li>
+                </ul>
+            </nav>
+            <nav class="desktopNav">
+                <ul>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#portfolio">Portefólio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="marcacao.html">Marcações</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div>
+            <div class="hero-image">
+                <img src="img/new-hero.jpg" alt="Makeup Artist" loading="lazy">
+            </div>
+        </div>
+        <div class="hero-content">
+            <!-- <h2>Maquilhadora Profissional</h2> -->
+            <p>A maquilhagem é a arte que realça a sua verdadeira essência!</p>
+            <a id="heroSubHeader">Para todas as ocasiões! Agenda agora a tua marcação ou descobre mais em baixo.</a>
+            <a href="marcacao.html" id="heroCta" class="cta-button services-btn">Agendar Marcação</a>
+        </div>
+    </section>
+    <section class="services">
+        <h2>Serviços</h2>
+        <div class="service-content">
+        <div class="service-card">
+            <h3>Maquilhagem</h3>
+            <div class="content">
+                <p>Ideal para dia-a-dia, sessões fotográficas entrevistas, etc...</p>
+                <p class="preco">27<a class="moeda">€</a></p>
+            </div>
+        </div>
+        <div class="service-card">
+            <h3>Maquilhagem Artística ou Festiva</h3>
+            <div class="content">
+                <p>Maquilhagem Artística para festas de aniversário, Carnaval, Halloween ou moda, assim como Festiva para casamentos, comunhões, batizados ou eventos sociais.</p>
+                <p class="preco">desde 27<a class="moeda">€</a></p>
+            </div>
+        </div>
+        <div class="service-card casamento">
+            <div class="content casamentos">
+                <h3>Maquilhagem para Casamentos</h3>
+                <p>Ideal para o teu casamento, maquilhagem de noiva e das damas de donor/mãe. Feita para resistir a
+                    tudo, blindada para grarantir que não sai durante todo o dia.</p>
+                <p class="preco">desde 130<a class="moeda">€</a></p>
+            </div>
+        </div>
+    </div>
+        <!-- <a href="marcacao.html" class="cta-button services-btn">Faz agora a tua marcação!</a> -->
+    </section>
+    <section id="about">
+
+        <div class="about-content">
+            <h2>Sobre Mim</h2>
+            <p>Olá sou a <strong>Vanessa Marques</strong>,
+                Sou nails designer à já x anos, mas sou também fascinada por maquilhagem desde a minha adolescência. Em
+                2023, decidi concretizar o meu sonho e fiz o curso profissional de maquilhagem da Academy Beauty School.
+                A área de beleza, de cuidar e de puder ajudar as pessoas a sentirem-se bem com a sua imagem sempre foi
+                um sonho meu. Após a realização do curso, decidi expandir o meu conhecimento nesta área tornando-me
+                Maquilhadora Profissional.
+                Continuo a investir no meu crescimento enquanto maquiadora através de formações e workshops (Carina
+                Torres Makeup) e <strong>trabalho todos os dias para melhorar o meu trabalho e a tua
+                    experiencia</strong>.
+                Embora não tenha tanta experiencia como com unhas, conto já com bastantes atendimentos no âmbito da
+                maquilhagem de beleza.
+                <br> Podes ver alguns desses trabalhos em baixo.
+            </p>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!--
+    <section id="portfolio" class="portfolio">
+        <h2>Portefólio</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="img/maqui0.webp" alt="Slide 1" loading="lazy">
+                <img src="img/maqui1.webp" alt="Slide 2" loading="lazy">
+                <img src="img/maqui2.webp" alt="Slide 3" loading="lazy">
+                <img src="img/maqui3.webp" alt="Slide 4" loading="lazy">
+                <img src="img/maqui4.webp" alt="Slide 5" loading="lazy">
+                <img src="img/maqui5.webp" alt="Slide 6" loading="lazy">
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <h4>Podes ver todos os meus trabalho <a href="portfolio.html">aqui</a>, ou nas minhas redes sociais.</h4>
+        <div class="portfolioSocialMedia">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </section> -->
+    <section id="portfolio" class="portfolio">
+        <h2>Portefólio</h2>
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="img/maqui0.webp" alt="Slide 1" loading="lazy">
+                <img src="img/maqui1.webp" alt="Slide 2" loading="lazy">
+                <img src="img/maqui2.webp" alt="Slide 3" loading="lazy">
+                <img src="img/maqui3.webp" alt="Slide 4" loading="lazy">
+                <img src="img/maqui4.webp" alt="Slide 5" loading="lazy">
+                <img src="img/maqui5.webp" alt="Slide 6" loading="lazy">
+                <!-- Add more images as needed -->
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <h4 class="socialMediaText">Podes ver todos os meus trabalho <a href="portfolio.html">aqui</a>, ou nas minhas
+            redes sociais.</h4>
+        <div class="portfolioSocialMedia">
+            <a href="https://www.facebook.com/vanessa.marques.18400" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/vanessa_nails_makeupartist/" class="fa fa-instagram"></a>
+        </div>
+    </section>
+    <section class="reviews">
+        <h2>Testemunhos</h2>
+
+        <div class="review-container">
+            <div class="review">
+                <p>"Quase 24h depois estava perfeita! És a melhor"</p>
+                <p>- Raquel Dias</p>
+            </div>
+
+            <div class="review">
+                <p>"Obrigada pela maquiagem estava incrível aguentou super bem toda a gente cobiçou"</p>
+                <p>- Diana Costa</p>
+            </div>
+
+            <div class="review">
+                <p>"Estava top toda a gente adorou a maquiagem"</p>
+                <p>- Catarina Borges</p>
+            </div>
+        </div>
+    </section>
+    <section id="faq">
+        <h2>Perguntas Frequentes</h2>
+        <hr class="questionBreakersHeader">
+        <div class="faq-item">
+            <h3 class="question">Com quanto tempo de antecedência devo fazer marcação?</h3>
+            <p class="answer">Para noivas, sendo um serviço essencial para o grande dia, este deverá ser marcado com 8 a 12 meses de antecedência. 
+                No caso de maquilhagem social, festiva ou artística, aconselho a marcação com 2 meses de antecedência.</p><hr class="questionBreakers">
+        </div>
+        <div class="faq-item">
+            <h3 class="question">Faz deslocação?</h3>
+            <p class="answer">Sim, faço deslocação dentro da zona norte!</p><hr class="questionBreakers">
+        </div>
+        <div class="faq-item">
+            <h3 class="question">Como é cobrada a deslocação ? </h3>
+            <p class="answer">As deslocações fora da nossa localidade (pedir orçamento) são cobradas ao quilometro + portagens.</p><hr class="questionBreakers">
+        </div>
+        <div class="faq-item">
+            <h3 class="question">No dia do casamento quanto tempo necessita para maquilhar a noiva?</h3>
+            <p class="answer">Sensivelmente uma hora. Horário a agendar para o dia do casamento tendo em conta vários fatores como o local da cerimónia, número de familiares/amigas a maquilhar, o fotógrafo, etc... </p><hr class="questionBreakers">
+        </div>
+        <div class="faq-item">
+            <h3 class="question">No dia do casal também pode maquilhar a minha mãe e damas de honor?</h3>
+            <p class="answer">Sim, disponho de packs para família/amigas da noiva até 6 pessoas.</p><hr class="questionBreakers">
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <div class="contact-content">
+            <div class="text">
+                <p>Rua 5 de Outubro 412</p>
+                <p>4445-561 Ermesinde</p>
+                <p>+351 917696648</p>
+                <p>vanessanails@gmail.com?</p>
+            </div>
+            <div class="map">
+                <!-- Add your Google Maps embed code or iframe here -->
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24275.34010361607!2d-74.013954!3d40.705868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25902cb084803%3A0xf0e2042e5bd8cd0e!2sTimes%20Square%2C%20New%20York%2C%20NY%2010018%2C%20USA!5e0!3m2!1sen!2s!4v1630392765608!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                <iframe class="embed-responsive-item"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315.451438130683!2d-8.544160607025281!3d41.219661878923375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd24616c0552f01b%3A0x4eaa69c9f9a214cd!2sR.%205%20de%20Outubro%20412%2C%204445-561%20Ermesinde!5e0!3m2!1sen!2spt!4v1703177718045!5m2!1sen!2spt"
+                    data-map="JTdCJTIycG9zaXRpb25UeXBlJTIyJTNBJTIybWFwLWVtYmVkJTIyJTJDJTIyYWRkcmVzcyUyMiUzQSUyMk1hbmhhdHRhbiUyQyUyME5ldyUyMFlvcmslMjIlMkMlMjJ6b29tJTIyJTNBMTAlMkMlMjJ0eXBlSWQlMjIlM0ElMjJyb2FkJTIyJTJDJTIybGFuZyUyMiUzQSUyMiUyMiUyQyUyMmVtYmVkJTIyJTNBJTIyaHR0cHMlM0ElMkYlMkZ3d3cuZ29vZ2xlLmNvbSUyRm1hcHMlMkZlbWJlZCUzRnBiJTNEITFtMTghMW0xMiExbTMhMWQzMTUuNDUxNDM4MTMwNjgzITJkLTguNTQ0MTYwNjA3MDI1MjgxITNkNDEuMjE5NjYxODc4OTIzMzc1ITJtMyExZjAhMmYwITNmMCEzbTIhMWkxMDI0ITJpNzY4ITRmMTMuMSEzbTMhMW0yITFzMHhkMjQ2MTZjMDU1MmYwMWIlMjUzQTB4NGVhYTY5YzlmOWEyMTRjZCEyc1IuJTI1MjA1JTI1MjBkZSUyNTIwT3V0dWJybyUyNTIwNDEyJTI1MkMlMjUyMDQ0NDUtNTYxJTI1MjBFcm1lc2luZGUhNWUwITNtMiExc2VuITJzcHQhNHYxNzAzMTc3NzE4MDQ1ITVtMiExc2VuITJzcHQlMjIlN0Q="
+                    loading="lazy" width="100%" height="350px" style="border:0;""></iframe>
+            </div>
+        </div>
+    </section>
+      <section class=" cta">
+                    <h2>Preparada para elevar o teu visual?</h2>
+                    <p>Serviços e preços também disponíveis na página de agendamentos.</p>
+                    <a href="marcacao.html" class="cta-button">Marca agora!</a>
+    </section>
+    <script src="script.js"></script>
+    <script src="hamMenu.js"></script>
+</body>
+
+</html>
